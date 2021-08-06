@@ -47,7 +47,7 @@ body {
 
 img {
   display: block;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 section {
@@ -94,6 +94,9 @@ h1 { font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
 
+.logo {
+  max-width: 20%;
+}
 
 .section__title {
   margin-bottom: .25em;
@@ -216,6 +219,56 @@ nav {
     margin-left: 2.5em;
   }
 }
+
+/* ABOUT ME */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img {
+
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+    "title img"
+    "subtitle img"
+    "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  .about-me__img {
+    grid-area:  img;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
