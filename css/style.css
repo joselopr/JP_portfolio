@@ -124,6 +124,13 @@ h3 { font-size: var(--fs-h3);}
 
 }
 
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
+
 /* INTRO SECTION */
 
 nav {
@@ -241,35 +248,42 @@ nav {
     "text img";
     grid-column-gap: 2em;
   }
-
 }
 
 .section__title--about {
-    grid-area: title;
-  }
+  grid-area: title;
+}
 
-  .about-me__img {
-    grid-area:  img;
-    position: relative;
-    z-index: 2;
-  }
+.about-me__img {
+  grid-area:  img;
+  position: relative;
+  z-index: 2;
+}
 
-  .section__subtitle--about {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
+.section__subtitle--about {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  position: relative;
+  left: -1em;
+  width: calc(100% + 2em);
+  padding-left: 1em;
+  padding-right: calc(200px + 4em);
+}
 
-  }
-
-
-
+/* MY WORK */
 
 
+.my-work {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
 
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
 
 
 
